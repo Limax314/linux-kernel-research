@@ -5,6 +5,15 @@
  *  Copyright (C) 2008 Thomas Gleixner <tglx@linutronix.de>
  *  Copyright (C) 2008-2011 Red Hat, Inc., Ingo Molnar
  *  Copyright (C) 2008-2011 Red Hat, Inc., Peter Zijlstra
+ *  Copyright (C) 2009 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
+ */
+
+#include <linux/fs.h>
+#include <linux/mm.h>
+#include <linux/cpu.h>
+#include <linux/smp.h>
+#include <linux/idr.h>
+/**
  * @remarks
- * 여기서부터 작업 예정
+ * 여기서부터 작성 예정
  */
