@@ -13,6 +13,16 @@
 #include <linux/cpu.h>
 #include <linux/smp.h>
 #include <linux/idr.h>
+#include <linux/file.h>
+#include <linux/poll.h>
+#include <linux/slab.h>
+#include <linux/hash.h>
+#include <linux/tick.h>
+#include <linux/sysfs.h>
+#include <linux/dcache.h>
+#include <linux/percpu.h>
+#include <linux/ptrace.h>
+#include <linux/reboot.h>
 /**
  * @remarks
  * 여기서부터 작성 예정
