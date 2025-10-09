@@ -23,6 +23,11 @@
 #include <linux/percpu.h>
 #include <linux/ptrace.h>
 #include <linux/reboot.h>
+#include <linux/vmstat.h>
+#include <linux/device.h>
+#include <linux/export.h>
+#include <linux/vmalloc.h>
+#include <linux/hardirq.h>
 /**
  * @remarks
  * 여기서부터 작성 예정
