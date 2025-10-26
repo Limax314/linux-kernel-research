@@ -28,6 +28,13 @@
 #include <linux/export.h>
 #include <linux/vmalloc.h>
 #include <linux/hardirq.h>
+#include <linux/hugetlb.h>
+#include <linux/rculist.h>
+#include <linux/uaccess.h>
+#include <linux/syscalls.h>
+#include <linux/anon_inodes.h>
+#include <linux/kernel_stat.h>
+#include <linux/cgroup.h>
 /**
  * @remarks
  * 여기서부터 작성 예정
