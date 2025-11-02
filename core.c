@@ -35,6 +35,19 @@
 #include <linux/anon_inodes.h>
 #include <linux/kernel_stat.h>
 #include <linux/cgroup.h>
+#include <linux/perf_event.h>
+#include <linux/trace_events.h>
+#include <linux/hw_breakpoint.h>
+#include <linux/mm_types.h>
+#include <linux/module.h>
+#include <linux/mman.h>
+#include <linux/compat.h>
+#include <linux/bpf.h>
+#include <linux/filter.h>
+#include <linux/namei.h>
+#include <linux/parser.h>
+#include <linux/sched/clock.h>
+#include <linux/sched/mm.h>
 /**
  * @remarks
  * 여기서부터 작성 예정
