@@ -48,6 +48,13 @@
 #include <linux/parser.h>
 #include <linux/sched/clock.h>
 #include <linux/sched/mm.h>
+#include <linux/proc_ns.h>
+#include <linux/mount.h>
+#include <linux/min_heap.h>
+
+#include "internal.h"
+
+#include <asm/irq_regs.h>
 /**
  * @remarks
  * 여기서부터 작성 예정
