@@ -55,6 +55,13 @@
 #include "internal.h"
 
 #include <asm/irq_regs.h>
+
+typedef int (*remote_function_f)(void *);
+
+struct remote_function_call
+{
+
+}
 /**
  * @remarks
  * 여기서부터 작성 예정
