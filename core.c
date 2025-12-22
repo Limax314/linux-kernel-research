@@ -60,7 +60,15 @@ typedef int (*remote_function_f)(void *);
 
 struct remote_function_call
 {
+    struct task_struct *p;
+    remote_function_f func;
+    void *info;
+    int ret;
+}
 
+static void
+remote_function(void *data)
+{
 }
 /**
  * @remarks
