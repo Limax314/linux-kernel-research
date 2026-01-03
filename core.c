@@ -60,17 +60,31 @@ typedef int (*remote_function_f)(void *);
 
 struct remote_function_call
 {
-    struct task_struct *p;
-    remote_function_f func;
-    void *info;
-    int ret;
+  struct task_struct *p;
+  remote_function_f func;
+  void *info;
+  int ret;
 }
 
 static void
 remote_function(void *data)
 {
+  struct remote_function_call *tfc = data;
+  struct task_struct *p = tfc->p;
+
+  if (p)
+  {
+    /* -EAGAIN */
+    if (task_cpu(p) != smp_processor_id())
+      return;
+
+    /**
+     * @remarks
+     * 여기서부터 작성 예정
+     */
+
+    /*
+     *
+     */
+  }
 }
-/**
- * @remarks
- * 여기서부터 작성 예정
- */
