@@ -93,6 +93,13 @@ remote_function(void *data)
 }
 
 /**
+ * task_function_call - call a function on the cpu on which a task runs
+ * @p: the task to evaluate
+ * @func: the function to be called
+ * @info: the function call argument
+ *
+ */
+/**
  * @remarks
  * 여기서부터 작성 예정
  */
