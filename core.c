@@ -1,4 +1,4 @@
-﻿// SPDX-License-Identifier: GPL-2.0
+// SPDX-License-Identifier: GPL-2.0
 /**
  * Performance events core code:
  *
@@ -102,4 +102,5 @@ remote_function(void *data)
 /**
  * @remarks
  * 여기서부터 작성 예정
+ * 모바일 Commit TEST
  */
