@@ -98,8 +98,29 @@ remote_function(void *data)
  * @func: the function to be called
  * @info: the function call argument
  *
+ * Calls the function @func when the task is currently running. This might
+ * be on the curren CPU, which just calls the function directly, This will
+ * retry due to any failures in smp_call_function_single(), such as if the
+ * task_cpu() goes offline concurrently.
+ *
+ * returns @func return value or -ESRCH or -ENXIO when the process isn't running
  */
-/**
- * @remarks
- * 여기서부터 작성 예정
- */
+static int
+task_function_call(struct task_struct *p, remote_function_f func, void *info)
+{
+  struct remote_function_call data = {
+      .p = p,
+      .func = func,
+      .info = info,
+      .ret = -EAGAIN,
+  };
+  int ret;
+
+  for (;;)
+  /**
+   * @remarks
+   * 여기서부터 작성 예정
+   */
+  {
+  }
+}
